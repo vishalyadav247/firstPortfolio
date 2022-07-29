@@ -38,19 +38,19 @@
     <!-- header section -->
     <header>
         <ul class="navbar">
-            <li class="navbar_links"><a href="">Home</a></li>
-            <li class="navbar_links"><a href="">About</a></li>
-            <li class="navbar_links"><a href="">Projects</a></li>
+            <li class="navbar_links"><a href="#Home">Home</a></li>
+            <li class="navbar_links"><a href="#About">About</a></li>
+            <li class="navbar_links"><a href="#Work">Projects</a></li>
             <li class="navbar_links"><a href="">Work</a></li>
             <li class="navbar_links"><a href="">Blog</a></li>
-            <li class="navbar_links"><a href="">Contacts</a></li>
+            <li class="navbar_links"><a href="#Contact">Contacts</a></li>
             <span class="logo">VY</span>
             <span id="bar" class="material-symbols-outlined" style="font-size: 45px;color:var(--themeColor)">menu</span>
         </ul>
     </header>
 
     <!-- home section -->
-    <section class="home">
+    <section id="Home" class="home">
         <div class="home_left">
             <div class="home_mid">
             </div>
@@ -66,12 +66,11 @@
     </section>
 
     <!-- about section -->
-    <section class="about">
+    <section id="About" class="about">
         <div class="about_left">
             <h3>About Me !</h3>
-            <h4>I Am Vishal Yadav -- Web Designer & Front-end Developer</h4>
             <blockquote class="about_text">
-
+                <h4>I Am Vishal Yadav -- Web Designer & Front-end Developer</h4>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; " I am Self-motivated & results oriented professional with a
                 Master’s Degree in MBA (First Class Honours) in Information Technology
                 in 2022. I am a passionate Web Developer intern with hands-on experience and practice in static and
@@ -83,7 +82,7 @@
 
             </blockquote>
             <div class="about_links">
-                <a href=""> Download CV</a>
+                <a href="myResume.pdf" download="Vishal Yadav"> Download CV</a>
                 <a href=""> View Projects</a>
             </div>
         </div>
@@ -144,14 +143,31 @@
     </section>
     
     <!-- project -->
-    <section class="project">
-        <h5>PORTFOLIO</h5>
-        <h3>My Latest Work</h3>
-        <a href="https://vishalyadav247.github.io/indianRestaurant/">1 project</a>
+    <section id="Work">
+        <div class="project">
+            <h5>PORTFOLIO</h5>
+            <h3>My Latest Work</h3>
+        </div>
+        <div class="project-items">
+            <a href="https://vishalyadav247.github.io/indianRestaurant/">
+                <figure>
+                    <img src="images/restaurant.png" alt="">
+                    <figcaption style="text-align:center;color:black;font-weight: 600;background-color:white;border: 1px solid black;">indianRestaurant</figcaption>
+                </figure>
+            </a>
+            <a href="https://vishalyadav247.github.io/myNotes/">
+                <figure>
+                    <img src="images/mynotes.png" alt="">
+                    <figcaption style="text-align:center;color:black;font-weight: 600;background-color:white;border: 1px solid black;">myNotes</figcaption>
+                </figure>
+                
+            </a>
+        </div>
+        
     </section>
 
     <!-- contect section -->
-    <section class="contact">
+    <section id="Contact" class="contact">
         <h3>Keep IN Touch</h3>
         <h4>For any Enquire - Please Contact</h4>
         <div class="contactBox">
