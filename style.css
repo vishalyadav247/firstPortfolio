@@ -215,7 +215,6 @@ header a {
 }
 
 .about_text {
-    text-transform: capitalize;
     margin: 20px 0 100px 0;
     padding-left: 15px;
     color: rgb(109, 106, 106);
