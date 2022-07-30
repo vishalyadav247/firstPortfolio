@@ -318,8 +318,9 @@ header a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: row wrap;
     background-color: var(--themeColor);
-    height: 500px;
+    height: auto;
 }
 .project-items a{
     margin: 20px;
