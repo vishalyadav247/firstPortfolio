@@ -36,36 +36,43 @@ body {
     background-color: var(--bgColor);
 
 }
-
+header{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    background-color: aliceblue;
+}
 /* header section*/
-.navbar::before {
+header::before {
     content: "";
     position: absolute;
-    height: 60px;
     width: 100%;
     top: 0;
     left: 0;
-    /* background-color:var(--themeColor); */
+    height: 50px;
     opacity: 0.6;
     z-index: -1;
 }
 
 .navbar {
-    position: fixed;
-    top: 0px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content:center;
     list-style: none;
     padding: 10px;
     width: 100%;
-    z-index: 1;
     /* border-bottom:1px solid red ; */
 }
-
+.nav_mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .navbar_links {
     
-    margin: 10px 10px;
+    margin: 5px 5px;
     padding: 0px 9px;
     transition: all 1s;
 }
@@ -99,17 +106,21 @@ header a {
 }
 
 #bar {
-    font-size: var(--navFont);
     display: none;
 }
 
 /* home section */
 .home {
+    /* position: relative;
+    top: -50px; */
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: auto;
+    z-index: 1;
+
 }
 
 .home_left {
@@ -486,27 +497,6 @@ footer {
 
 /* responsive settings for max-width 900px */
 @media only screen and (max-width:900px) {
-    .navbar_links {
-        display: none;
-    }
-
-    .navbar {
-        justify-content: right;
-        padding: 5px;
-        width: 100%;
-    }
-
-    #bar {
-        display: block;
-    }
-
-    .logo {
-        display: block;
-        position: absolute;
-        left: 20px;
-        top: 12px;
-    }
-
     .home {
         flex-direction: column;
     }
@@ -541,6 +531,23 @@ footer {
 
 /* responsive settings for max-width 600px */
 @media only screen and (max-width:600px) {
+    .nav_mid {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #bar {
+        display: block;
+    }
+
+    .logo {
+        display: block;
+    } 
+
     form {
         width: 96%;
     }
