@@ -34,4 +34,3 @@ function hide() {
     menuLinks.style.display="none"
     navBar.style.backgroundColor="transparent"
 }
-

@@ -11,7 +11,7 @@
     --themeColor:rgb(255, 164, 148) ;
     --bgColor: rgb(207, 233, 247);
     /* --bgColor: white; */
-    --themeColor2: rgb(247, 53, 159);
+    --themeColor2: #009B90;
 }
 
 /* rgb(255, 180, 19) */
@@ -38,7 +38,7 @@ body {
 }
 header{
     position: sticky;
-    top: 0px;
+    top: 1px;
     left: 0px;
     z-index: 2;
     background-color: aliceblue;
@@ -316,28 +316,59 @@ header a {
     margin-bottom: 100px;
 }
 /* project section */
-.project{
+.project-upper{
     width: 100%;
-    height: 450px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: var(--themeColor);
+    color: white;
 }
-.project-items{
+.project-upper h5{
+    letter-spacing: 5px;
+}
+.project-lower{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-flow: row wrap;
-    background-color: var(--themeColor);
-    height: auto;
+    height:auto;
+    width: 70%;
+    margin: auto;
+    padding: 50px 0px;
+}
+.project-items{
+    margin-bottom: 50px;
+    width: 45%;
+    height:200px;
+    background-color: #009B90;
+    background: linear-gradient(to bottom right, #009B90);
+    box-shadow: 0px 0px 5px black;
+
+    
+}
+.project-items:hover{
+    background-color:var(--themeColor);
+    box-shadow: 0px 0px 0px transparent;
+
+    
 }
 .project-items a{
-    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    text-decoration: none;
+    color:white;
+    font-weight: bolder;
+    
 }
-.project-items img{
-    height:400px ;
-    width: 300px;
+.project-items a:hover{
+    color:white;
 }
 
 
@@ -424,14 +455,14 @@ form input, textarea {
 
 .formItem_4 input {
     background-color: var(--bgColor);
-    width: 200px;
+    width: 150px;
 }
 
 /* footer section */
 footer {
     width: 100%;
     height: auto;
-    background-color:var(--themeColor);
+    background-color:var(--themeColor2);
 }
 
 .footer-links {
@@ -526,6 +557,12 @@ footer {
 
     .skills_main {
         width: 100%;
+    }
+    .project-lower{
+        width: 100%;
+    }
+    .project-items{
+        width: 70%;
     }
 }
 
