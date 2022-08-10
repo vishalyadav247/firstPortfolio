@@ -7,14 +7,13 @@
 }
 
 :root {
-    --themeFont: 'Ubuntu', sans-serif;
-    --themeColor:rgb(255, 164, 148) ;
     --bgColor: rgb(207, 233, 247);
-    /* --bgColor: white; */
-    --themeColor2: #009B90;
+    --themeFont: 'Ubuntu', sans-serif;
+    /* --themeColor2:rgb(255, 164, 148) ; */
+    --themeColor2:  #009B90;
+    --themeColor: #009B90;
 }
 
-/* rgb(255, 180, 19) */
 h1 {
     font-size: 4rem;
 }
@@ -343,15 +342,11 @@ header a {
     margin-bottom: 50px;
     width: 45%;
     height:200px;
-    background-color: #009B90;
-    background: linear-gradient(to bottom right, #009B90);
-    box-shadow: 0px 0px 5px black;
-
-    
+    border: 3px solid var(--themeColor2);
+    transition: all 1s;
 }
 .project-items:hover{
-    background-color:var(--themeColor);
-    box-shadow: 0px 0px 0px transparent;
+    background-color: var(--themeColor2);
 
     
 }
@@ -363,12 +358,13 @@ header a {
     height: 100%;
     font-size: 30px;
     text-decoration: none;
-    color:white;
+    color: var(--themeColor2);
     font-weight: bolder;
     
 }
 .project-items a:hover{
     color:white;
+    /* color: var(--themeColor); */
 }
 
 
