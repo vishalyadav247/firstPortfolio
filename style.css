@@ -133,7 +133,7 @@ header a {
     background-color: aliceblue;
 }
 
-.skillsBtn{
+.home-link{
     margin: 100px 0px 60px 0;
     border: 1px solid black;
     padding: 10px 25px;
@@ -145,7 +145,7 @@ header a {
     color: black;
 }
 
-.skillsBtn:hover {
+.home-link:hover {
     background-color: var(--themeColor);
 }
 
@@ -248,6 +248,7 @@ header a {
     color: black;
     transition: all 1s;
     font-weight: bolder;
+    text-decoration: none;
 }
 
 .about_links a:hover {
