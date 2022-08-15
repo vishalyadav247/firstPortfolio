@@ -28,6 +28,7 @@ menuSideBar.addEventListener("click",function () {
 
 function show() {
     menuLinks.style.display="block";
+    menuLinks.style.height="auto"
     navBar.style.backgroundColor="rgb(255, 164, 148)";
 }
 function hide() {
