@@ -14,12 +14,12 @@ body{background-color: var(--themeColor2);}
     --themeFont: 'Ubuntu', sans-serif;
 
     --fontBlack: rgb(70, 63, 63);
-    --fontColor: rgb(119, 113, 101);
+    --fontColor: rgb(146, 139, 123);
 
 
     --themeColor3: rgb(255, 197, 109);
     --themeColor2: rgb(253, 255, 238);
-    --themeColor: #82e4dd;
+    --themeColor: #ff9f73;
     --themeColor4: rgb(207, 233, 247);
 
 
