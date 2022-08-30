@@ -1,4 +1,16 @@
 console.log("welcome to javascript"); 
+let navbar=document.querySelector('header')
+window.addEventListener('scroll', function(event) { // To listen for event
+    event.preventDefault()
+    if (window.scrollY <= 570) {
+        navbar.style.backgroundColor = 'transparent';
+        navbar.style.borderBottom='0'
+        
+    } else {
+        navbar.style.backgroundColor = 'grey';
+    }
+});
+
 
 // type effect
 let typed = new Typed(".animated_text", {
