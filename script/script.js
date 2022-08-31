@@ -51,5 +51,5 @@ function show() {
 }
 
 function hide() {
-    menuLinks.style.top = "-100%"
+    menuLinks.style.top = "-300px"
 }
