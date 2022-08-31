@@ -24,27 +24,32 @@ let typed = new Typed(".animated_text", {
 // Menu show hide button
 let menuSideBar = document.getElementById("bar");
 let menuLinks = document.getElementById("allLinks");
-let navBar = document.getElementById("nav")
-var state = false;
+let links = document.querySelectorAll('.navbar_links');
 
-menuSideBar.addEventListener("click", function () {
-    if (state == false) {
-        show();
-        state = true;
-    }
-    else {
-        hide();
-        state = false
-    }
-
+menuSideBar.addEventListener("click",show)
+menuLinks.addEventListener('click',(e) => {
+    if (e.target) {hide()}
 })
 
 function show() {
-    menuLinks.style.display = "block";
-    menuLinks.style.height = "auto"
-    navBar.style.backgroundColor = "rgb(255, 164, 148)";
+    menuLinks.style.transition = '1s'
+    menuLinks.style.position = 'absolute'
+    menuLinks.style.top = '0px'
+    menuLinks.style.zIndex = '1'
+    menuLinks.style.right = '0px'
+    menuLinks.style.width = '100%'
+    menuLinks.style.display = "flex";
+    menuLinks.style.flexDirection = 'column'
+    menuLinks.style.alignItems = 'center'
+    menuLinks.style.padding = '20px 0px'
+    menuLinks.style.backgroundColor = 'dodgerBlue';
+    links.forEach(element => {
+        let a = element.querySelector('a')
+        a.style.display = 'block';
+        a.style.color = 'white'
+    });
 }
+
 function hide() {
-    menuLinks.style.display = "none"
-    navBar.style.backgroundColor = "transparent"
+    menuLinks.style.right = "-102%"
 }
