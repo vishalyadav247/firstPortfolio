@@ -38,15 +38,10 @@
 
     .navbar {
         justify-content: end;
-        align-items: flex-start;
     }
 
     #bar {
         display: block;
-    }
-
-    .logo {
-        /* display: block; */
     }
 
     .animated_text {
