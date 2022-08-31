@@ -1,0 +1,85 @@
+/* responsive settings for max-width 900px */
+@media only screen and (max-width:900px) {
+    .home {
+        flex-direction: column;
+    }
+
+    .home_left {
+        width: 100%;
+    }
+
+    .home_right {
+        width: 100%;
+    }
+
+    .home_right img {
+        height: 60%;
+    }
+
+    .skills_main {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-lower {
+        width: 100%;
+    }
+
+    .project-items {
+        width: 70%;
+    }
+}
+
+/* responsive settings for max-width 600px */
+@media only screen and (max-width:600px) {
+    .nav_mid {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: end;
+        align-items: flex-start;
+    }
+
+    #bar {
+        display: block;
+    }
+
+    .logo {
+        /* display: block; */
+    }
+
+    .animated_text {
+        font-size: 35px;
+    }
+
+    .home_right img {
+        width: 80%;
+        height: 40%;
+    }
+
+    .about_left {
+        width: 100%;
+    }
+
+    .about_links a {
+        margin: 5px;
+    }
+    .skills_heading{
+        width: 100%;
+        padding: 10px;
+    }
+    .skills-bottom {
+        padding-left: 10px;
+
+    }
+
+    .about_left h4 {
+        font-size: 1.1rem;
+        width: 353px;
+    }
+
+    form {
+        width: 96%;
+    }
+}

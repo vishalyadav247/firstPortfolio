@@ -1,0 +1,31 @@
+:root {
+    --bgColor: white;
+
+    --themeFont: 'Ubuntu', sans-serif;
+
+    --fontBlack: rgb(70, 63, 63);
+    --fontColor: rgb(146, 139, 123);
+
+
+    --themeColor: #ff8952;
+    --themeColor3: rgb(255, 197, 109);
+    --themeColor2: rgb(253, 255, 238);
+    --themeColor4: rgb(207, 233, 247);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
