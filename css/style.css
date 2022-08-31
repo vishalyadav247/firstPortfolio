@@ -34,6 +34,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 70%;
 }
 
 .navbar_links {
@@ -253,7 +254,7 @@ header a {
 
 /* skills section*/
 .skills_heading {
-    width: 70%;
+    width: 69%;
     margin: auto;
     padding-top: 100px;
 }
