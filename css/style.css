@@ -416,13 +416,24 @@ header a {
 }
 
 .contact h3 {
+    font-size: 2.7rem;
     margin-top: 100px;
 }
 
 .contact_p {
+    margin-top: 5px;
     padding: 3px 10px;
     font-size: 15px;
-    background-color: rgb(212, 247, 159);
+    background-color: silver;
+    text-shadow: 1px 1px 3px black;
+    color: white;
+    width: 100%;
+    border: 3px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 8px 0px;
+    text-align: center;
+    font-weight: bold;
     /* padding: 3px; */
 }
 
@@ -502,8 +513,9 @@ form input, textarea {
 footer {
     width: 100%;
     height: auto;
-    background-color: var(--themeColor2);
+    background-color: var(--themeColor);
     color: var(--fontBlack);
+    border-top: 0px;
 }
 
 .footer-links {
@@ -552,9 +564,10 @@ footer {
     width: 70%;
     height: 50px;
     margin: auto;
-    font-weight: 500;
+    font-weight: 600;
     display: flex;
+    letter-spacing: 2px;
     /* align-items: center;
     justify-content: center; */
-    color: grey;
+    color: var(--fontColor2);
 }
