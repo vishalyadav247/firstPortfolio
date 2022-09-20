@@ -418,17 +418,19 @@ header a {
 .contact h3 {
     font-size: 2.7rem;
     margin-top: 100px;
+    color: var(--fontBlack);
 }
 
 .contact_p {
     margin-top: 5px;
     padding: 3px 10px;
     font-size: 15px;
-    background-color:var(--themeColor);
+    /* background-color:var(--themeColor); */
+    background-color:silver;
     text-shadow: 1px 1px 3px black;
     color: white;
     width: 100%;
-    border: 5px solid silver;
+    border: 1px solid grey;
     border-left: 0px;
     border-right: 0px;
     padding: 8px 0px;
@@ -515,7 +517,6 @@ footer {
     height: auto;
     background-color: var(--themeColor);
     color: var(--fontBlack);
-
     border-top: 0px;
 }
 
