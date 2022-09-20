@@ -135,3 +135,8 @@ submit.addEventListener('click', (e) => {
 })
 
 
+if(scrollY => 2427 ){
+    let fix=document.querySelector('.project-upper')
+    fix.style.position='sticky';
+    fix.style.top='0'
+}

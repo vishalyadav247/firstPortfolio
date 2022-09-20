@@ -424,11 +424,11 @@ header a {
     margin-top: 5px;
     padding: 3px 10px;
     font-size: 15px;
-    background-color: silver;
+    background-color:var(--themeColor);
     text-shadow: 1px 1px 3px black;
     color: white;
     width: 100%;
-    border: 3px solid black;
+    border: 5px solid silver;
     border-left: 0px;
     border-right: 0px;
     padding: 8px 0px;
@@ -515,6 +515,7 @@ footer {
     height: auto;
     background-color: var(--themeColor);
     color: var(--fontBlack);
+
     border-top: 0px;
 }
 
@@ -543,6 +544,7 @@ footer {
     margin: 20px 0px;
     width: 200px;
     font-weight: 600;
+
 }
 
 .footer-icon {
@@ -551,6 +553,7 @@ footer {
 }
 
 .footer-address h4 {
+
     margin-bottom: 10px;
 }
 
@@ -569,5 +572,5 @@ footer {
     letter-spacing: 2px;
     /* align-items: center;
     justify-content: center; */
-    color: var(--fontColor2);
+    color: var(--fontBlack);
 }
