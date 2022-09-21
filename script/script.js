@@ -42,7 +42,7 @@ function show() {
     menuLinks.style.flexDirection = 'column'
     menuLinks.style.alignItems = 'center'
     menuLinks.style.padding = '20px 0px'
-    menuLinks.style.backgroundColor = 'dodgerBlue';
+    menuLinks.style.backgroundColor = 'rgb(51, 47, 36)';
     links.forEach(element => {
         let a = element.querySelector('a')
         a.style.display = 'block';
