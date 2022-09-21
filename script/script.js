@@ -51,17 +51,16 @@ function show() {
     menuLinks.style.flexDirection = 'column'
     menuLinks.style.alignItems = 'center'
     menuLinks.style.padding = '5px 0px'
-    menuLinks.style.backgroundColor = '#E15D44';
+    menuLinks.style.backgroundColor = '#363945';
     links.forEach(element => {
         let a = element.querySelector('a')
         a.style.display = 'block';
         a.style.letterSpacing='5px'
         a.style.padding='5px 130px'
-        a.style.borderBottom='1px solid black'
-        a.style.boxShadow='0px 0px 1px black'
+        a.style.borderBottom='1px solid silver'
         a.style.borderLeft='0px'
         a.style.borderRight='0px'
-        a.style.color = 'black'
+        a.style.color = 'silver'
     });
 }
 
