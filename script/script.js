@@ -24,6 +24,17 @@ let typed = new Typed(".animated_text", {
 // Menu show hide button
 let menuSideBar = document.getElementById("bar");
 let menuLinks = document.getElementById("allLinks");
+menuLinks.style.transition = '1s'
+menuLinks.style.position = 'absolute'
+menuLinks.style.top = '-305px'
+menuLinks.style.zIndex = '1'
+menuLinks.style.right = '0px'
+menuLinks.style.width = '100%'
+menuLinks.style.display = "flex";
+menuLinks.style.flexDirection = 'column'
+menuLinks.style.alignItems = 'center'
+menuLinks.style.padding = '20px 0px'
+menuLinks.style.backgroundColor = 'grey';
 let links = document.querySelectorAll('.navbar_links');
 
 menuSideBar.addEventListener("click", show)
@@ -32,26 +43,30 @@ menuLinks.addEventListener('click', (e) => {
 })
 
 function show() {
-    menuLinks.style.transition = '1s'
-    menuLinks.style.position = 'absolute'
-    menuLinks.style.top = '0px'
+    menuLinks.style.top = '-5px'
     menuLinks.style.zIndex = '1'
     menuLinks.style.right = '0px'
     menuLinks.style.width = '100%'
     menuLinks.style.display = "flex";
     menuLinks.style.flexDirection = 'column'
     menuLinks.style.alignItems = 'center'
-    menuLinks.style.padding = '20px 0px'
-    menuLinks.style.backgroundColor = 'rgb(51, 47, 36)';
+    menuLinks.style.padding = '5px 0px'
+    menuLinks.style.backgroundColor = '#E15D44';
     links.forEach(element => {
         let a = element.querySelector('a')
         a.style.display = 'block';
-        a.style.color = 'white'
+        a.style.letterSpacing='5px'
+        a.style.padding='5px 130px'
+        a.style.borderBottom='1px solid black'
+        a.style.boxShadow='0px 0px 1px black'
+        a.style.borderLeft='0px'
+        a.style.borderRight='0px'
+        a.style.color = 'black'
     });
 }
 
 function hide() {
-    menuLinks.style.top = "-300px"
+    menuLinks.style.top = "-305px"
 }
 
 // contact form validation
