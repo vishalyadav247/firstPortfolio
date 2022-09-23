@@ -1,7 +1,7 @@
 console.log("welcome to javascript");
 
 // navbar animation on scroll
-let navbar = document.querySelector('.nav_mid')
+let navbar = document.querySelector('.navbar')
 window.addEventListener('scroll', function (event) {
     event.preventDefault()
     if (window.scrollY <= 570) {
@@ -9,7 +9,7 @@ window.addEventListener('scroll', function (event) {
         navbar.style.borderBottom = '0'
 
     } else {
-        navbar.style.backgroundColor = 'silver';
+        navbar.style.backgroundColor = 'black';
     }
 })
 
