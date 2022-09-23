@@ -24,17 +24,6 @@ let typed = new Typed(".animated_text", {
 // Menu show hide button
 let menuSideBar = document.getElementById("bar");
 let menuLinks = document.getElementById("allLinks");
-// menuLinks.style.transition = '1s'
-// menuLinks.style.position = 'absolute'
-// menuLinks.style.top = '-305px'
-// menuLinks.style.zIndex = '1'
-// menuLinks.style.right = '0px'
-// menuLinks.style.width = '100%'
-// menuLinks.style.display = "flex";
-// menuLinks.style.flexDirection = 'column'
-// menuLinks.style.alignItems = 'center'
-// menuLinks.style.padding = '20px 0px'
-// menuLinks.style.backgroundColor = 'grey';
 let links = document.querySelectorAll('.navbar_links');
 
 menuSideBar.addEventListener("click", show)

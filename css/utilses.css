@@ -8,10 +8,10 @@
     --fontColor2: grey;
 
 
-    --themeColor3: #ff8952;
-    --themeColor: rgb(105, 180, 199);
+    --themeColor: #ff8952;
+    --themeColor4: rgb(105, 180, 199);
     --themeColor2: rgb(253, 255, 238);
-    --themeColor4: rgb(207, 233, 247);
+    --themeColor3: rgb(207, 233, 247);
 }
 
 h1 {

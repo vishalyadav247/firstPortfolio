@@ -341,7 +341,7 @@ header a {
 /* project section */
 .project-upper {
     width: 100%;
-    height: 250px;
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -407,38 +407,58 @@ header a {
 
 
 /* contact section */
+
+
+#contact_heading::before{
+    content: "";
+    background-color:var(--themeColor);
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#contact_heading{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+}
+.contact_heading_box{
+    color: rgb(181, 133, 212);
+    font-size: 3rem;
+    font-weight: bolder;
+    z-index: 2;
+    border:5px solid grey;
+    width: 110px;
+    height: 110px;
+    margin: 70px 20px;
+    text-align: center; 
+    padding-top: 22px;   /* padding: 50px 50px; */
+
+}
+.contact_p {
+    font-size: 15px;
+    color: black;
+    width: 100%;
+    border: 1px solid black;
+    padding: 8px 55px;
+    text-align: right;
+    font-weight: bold;
+    /* padding: 3px; */
+}
+
 .contact {
+    
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
-}
-
-.contact h3 {
-    font-size: 2.7rem;
-    margin-top: 100px;
-    color: var(--fontBlack);
-}
-
-.contact_p {
-    margin-top: 5px;
-    padding: 3px 10px;
-    font-size: 15px;
-    /* background-color:var(--themeColor); */
-    background-color:silver;
-    text-shadow: 1px 1px 3px black;
-    color: white;
-    width: 100%;
-    border: 1px solid grey;
-    border-left: 0px;
-    border-right: 0px;
-    padding: 8px 0px;
-    text-align: center;
-    font-weight: bold;
-    /* padding: 3px; */
+    /* background-color: white; */
 }
 
 .contactBox {
