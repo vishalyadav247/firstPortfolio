@@ -19,9 +19,6 @@ header {
     z-index: 2;
 }
 
-#allLinks{
-    
-}
 .navbar {
     height: auto;
     display: flex;
@@ -30,30 +27,18 @@ header {
     list-style: none;
     padding: 10px;
     width: 100%;
-
-
+    transition: all 1s;
 }
 
-.nav_mid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-}
 
 .navbar_links {
-    margin: 5px 8px;
-    transition: all 1s;
-    letter-spacing: 2px;
+    margin: 5px;
 }
 
-header a:hover {
-    color: var(--fontBlack);
-
-}
 
 header a {
-    padding: 7px 10px;
+    letter-spacing: 2px;
+    padding: 7px;
     text-decoration: none;
     font-family: 'Gilda Display', serif;
     color: var(--fontBlack);
@@ -63,14 +48,8 @@ header a {
     text-transform: uppercase;
 
 }
-
-.logo {
-    display: none;
-    font-weight: bolder;
-    letter-spacing: 5px;
-    border: 2px solid rgba(129, 128, 128, 0.808);
-    /* padding: 5px 10px 5px 13px; */
-
+header a:hover {
+    color: var(--fontColor2);
 }
 
 #bar {

@@ -1,5 +1,26 @@
 /* responsive settings for max-width 900px */
 @media only screen and (max-width:920px) {
+    .navbar {
+        position: absolute;
+        top: -230px;
+        padding-top: 30px;
+        flex-direction: column;
+        background-color: var(--themeColor2);
+        align-items: start;
+    }
+    
+    .navbar li a{
+        color: var(--fontColor2);
+    }
+
+    #bar {
+        display: block;
+        position: fixed;
+        right: 25px;
+        top: 25px;
+        z-index: 3;
+        color: var(--fontColor2);
+    }
     .home {
         flex-direction: column;
     }
@@ -55,17 +76,6 @@
 
 /* responsive settings for max-width 600px */
 @media only screen and (max-width:600px) {
-    .nav_mid {
-        display: none;
-    }
-
-    .navbar {
-        justify-content: end;
-    }
-
-    #bar {
-        display: block;
-    }
 
     .animated_text {
         font-size: 35px;

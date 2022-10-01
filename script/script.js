@@ -1,23 +1,13 @@
 console.log("welcome to javascript");
 
 // navbar animation on scroll
-let navbar = document.querySelector('.navbar')
-window.addEventListener('scroll', function (event) {
-    event.preventDefault()
-    if (window.scrollY <= 570) {
-        navbar.style.backgroundColor = 'transparent';
-        navbar.style.borderBottom = '0'
-        // navbar.style.boxShadow = '0px 0px 0px black';
-
-
-    } else {
-        // navbar.style.backgroundColor = 'white';
-        // navbar.style.borderBottom = '1px solid grey';
-        // navbar.style.boxShadow = '1px 1px 5px black';
-
-
-    }
-})
+// let navbar = document.querySelector('.navbar')
+// window.addEventListener('scroll', function (event) {
+//     event.preventDefault()
+//     if (window.scrollY <= 570) {
+//     } else {
+//     }
+// })
 
 // type effect
 let typed = new Typed(".animated_text", {
@@ -28,43 +18,41 @@ let typed = new Typed(".animated_text", {
 })
 
 // Menu show hide button
-let menuSideBar = document.getElementById("bar");
-let menuLinks = document.getElementById("allLinks");
+let menuLinks = document.getElementById("nav");
 let links = document.querySelectorAll('.navbar_links');
-
-menuSideBar.addEventListener("click", show)
 menuLinks.addEventListener('click', (e) => {
     if (e.target) { hide() }
 })
 
+let barState=false;
+
+let menuSideBar = document.getElementById("bar");
+menuSideBar.addEventListener("click", showHide)
+
 function show() {
-    menuLinks.style.top = '-5px'
-    menuLinks.style.zIndex = '1'
-    menuLinks.style.right = '0px'
-    menuLinks.style.width = '100%'
-    menuLinks.style.display = "flex";
-    menuLinks.style.flexDirection = 'column'
-    menuLinks.style.alignItems = 'center'
-    menuLinks.style.padding = '5px 0px'
-    menuLinks.style.backgroundColor = '#363945';
-    // links.forEach(element => {
-    //     let a = element.querySelector('a')
-    //     a.style.display = 'block';
-    //     a.style.letterSpacing='5px'
-    //     a.style.padding='5px 130px'
-    //     a.style.borderBottom='1px solid silver'
-    //     a.style.borderLeft='0px'
-    //     a.style.borderRight='0px'
-    //     a.style.color = 'silver'
-    // });
+    menuLinks.style.top='0px'
+    
+}
+function hide() {
+    menuLinks.style.top = "-230px"
+    
+}
+function showHide(){
+    if(barState==false){
+        show()
+        barState=true;
+    }
+    else{
+       hide()
+       barState=false;
+    }
 }
 
-function hide() {
-    menuLinks.style.top = "-305px"
-}
+
+
+
 
 // contact form validation
-
 let user = document.getElementById('name')
 let phone = document.getElementById('phone')
 let email = document.getElementById('email')
