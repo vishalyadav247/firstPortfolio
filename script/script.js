@@ -18,35 +18,30 @@ let typed = new Typed(".animated_text", {
 })
 
 // Menu show hide button
+let menuSideBar = document.getElementById("bar");
+let menuSideBar2 = document.getElementById("bar2");
+
+
 let menuLinks = document.getElementById("nav");
 let links = document.querySelectorAll('.navbar_links');
 menuLinks.addEventListener('click', (e) => {
     if (e.target) { hide() }
 })
 
-let barState=false;
-
-let menuSideBar = document.getElementById("bar");
-menuSideBar.addEventListener("click", showHide)
-
 function show() {
     menuLinks.style.top='0px'
-    
+    menuSideBar2.style.display='block'
+
 }
 function hide() {
-    menuLinks.style.top = "-230px"
+    menuLinks.style.top = "-250px"
+    menuSideBar2.style.display='none'
     
 }
-function showHide(){
-    if(barState==false){
-        show()
-        barState=true;
-    }
-    else{
-       hide()
-       barState=false;
-    }
-}
+
+menuSideBar.addEventListener("click", show)
+
+menuSideBar2.addEventListener("click", hide)
 
 
 

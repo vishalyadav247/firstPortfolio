@@ -1,16 +1,18 @@
 /* responsive settings for max-width 900px */
 @media only screen and (max-width:920px) {
     .navbar {
-        position: absolute;
-        top: -230px;
+        position:absolute;
+        top: -250px;
         padding-top: 30px;
         flex-direction: column;
         background-color: var(--themeColor2);
         align-items: start;
+        z-index: 2;
     }
     
     .navbar li a{
         color: var(--fontColor2);
+        font-size: 20px;
     }
 
     #bar {
@@ -18,9 +20,17 @@
         position: fixed;
         right: 25px;
         top: 25px;
-        z-index: 3;
-        color: var(--fontColor2);
+        z-index: 1;
     }
+     #bar2 {
+        display: none;
+        position: fixed;
+        right: 25px;
+        top: 25px;
+        color: var(--fontColor2);
+        z-index: 3;
+         } 
+
     .home {
         flex-direction: column;
     }
