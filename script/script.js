@@ -7,9 +7,15 @@ window.addEventListener('scroll', function (event) {
     if (window.scrollY <= 570) {
         navbar.style.backgroundColor = 'transparent';
         navbar.style.borderBottom = '0'
+        // navbar.style.boxShadow = '0px 0px 0px black';
+
 
     } else {
-        navbar.style.backgroundColor = 'black';
+        // navbar.style.backgroundColor = 'white';
+        // navbar.style.borderBottom = '1px solid grey';
+        // navbar.style.boxShadow = '1px 1px 5px black';
+
+
     }
 })
 
@@ -41,16 +47,16 @@ function show() {
     menuLinks.style.alignItems = 'center'
     menuLinks.style.padding = '5px 0px'
     menuLinks.style.backgroundColor = '#363945';
-    links.forEach(element => {
-        let a = element.querySelector('a')
-        a.style.display = 'block';
-        a.style.letterSpacing='5px'
-        a.style.padding='5px 130px'
-        a.style.borderBottom='1px solid silver'
-        a.style.borderLeft='0px'
-        a.style.borderRight='0px'
-        a.style.color = 'silver'
-    });
+    // links.forEach(element => {
+    //     let a = element.querySelector('a')
+    //     a.style.display = 'block';
+    //     a.style.letterSpacing='5px'
+    //     a.style.padding='5px 130px'
+    //     a.style.borderBottom='1px solid silver'
+    //     a.style.borderLeft='0px'
+    //     a.style.borderRight='0px'
+    //     a.style.color = 'silver'
+    // });
 }
 
 function hide() {

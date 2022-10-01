@@ -1,5 +1,5 @@
 /* responsive settings for max-width 900px */
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:920px) {
     .home {
         flex-direction: column;
     }
@@ -40,6 +40,16 @@
     }
     #contact_heading{
         height: 300px;
+    }
+    .footer-address ,.footer-menu,.footer-menu2{
+        width: 100%;
+
+    }
+    .footer-address ,.footer-menu {
+        margin-left: 0px;
+    }
+    .footer-menu2 {
+        margin-top: -25px;
     }
 }
 
@@ -108,6 +118,12 @@
     #contact_heading{
         height: 250px;
     }
+    .footer-links {
+        width: 90%;
+    }
+    .footer-strip{
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width:450px) {
@@ -121,7 +137,5 @@
         border:2px solid grey;
         font-weight: bold;
     }
-    #contact_heading{
-
-    }
+ 
 }

@@ -3,18 +3,17 @@
 
     --themeFont: 'Ubuntu', sans-serif;
 
-    --fontBlack: rgb(51, 47, 36);
-    --fontColor:#0a1364;
+    --fontBlack:rgb(51, 47, 36) ;
+    --fontColor:#201e1a;
+    --fontColor2: #c98c41;
 
-    --themeColor:#798EA4;
-    --themeColor2: #939597;
 
-    
+    --themeColor: #ff8952;
+    --themeColor1:#798EA4;
+    --themeColor2: #22211F;
 
-    --themeColor1: #ff8952;
+
     --themeColor4: #FDAC53;
-    --fontColor2: grey;
-
     --themeColor3: rgb(207, 233, 247);
 }
 
