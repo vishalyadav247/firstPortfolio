@@ -2,7 +2,7 @@
 @media only screen and (max-width:920px) {
     .navbar {
         position:absolute;
-        top: -250px;
+        top: -400px;
         padding-top: 30px;
         flex-direction: column;
         background-color: var(--themeColor2);
@@ -12,7 +12,11 @@
     
     .navbar li a{
         color: var(--fontColor2);
-        font-size: 20px;
+        font-size: 24px;
+        padding: 7px 200px 7px 30px;
+    }
+    .navbar li{
+        margin: 15px 0px;
     }
 
     #bar {
@@ -48,17 +52,18 @@
     }
 
     .skills_main {
-        width: 100%;
+        width: 70%;
         height: auto;
     }
 
     .project-lower {
-        width: 100%;
+        width: 76%;
     }
 
     .project-items {
-        width: 70%;
+        width: 43%;
     }
+
     .contact_heading_box{
         font-size: 2.3rem;
         width: 75px;
@@ -107,17 +112,40 @@
         width: 100%;
         padding: 10px;
     }
-    .skills_heading h4{
-        width: 350px;
+
+    .skills{
+        overflow-x: scroll;
+        align-items: start;
+        justify-content: start;
+    }
+    .skills_main {
+        padding:0px 10px;
+        flex-flow: row nowrap;
+        width: 1800px;
+        align-items: start;
+        justify-content:space-between;
     }
     .skills-bottom {
         padding-left: 10px;
 
     }
+    .skills_heading h4{
+        font-size: 24px;
+    }
 
     .about_left h4 {
         font-size: 1.1rem;
         width: 353px;
+    }
+    .project-upper{
+        height: 130px;
+    }
+    .project-lower{
+        width: 100%;
+        padding: 10px;
+    }
+    .project-items{
+        width: 100%;
     }
 
     form {

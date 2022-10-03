@@ -34,7 +34,7 @@ function show() {
 
 }
 function hide() {
-    menuLinks.style.top = "-250px"
+    menuLinks.style.top = "-400px"
     menuSideBar2.style.display='none'
     
 }
@@ -126,9 +126,10 @@ submit.addEventListener('click', (e) => {
     }
 })
 
-
-if(scrollY => 2427 ){
-    let fix=document.querySelector('.project-upper')
-    fix.style.position='sticky';
-    fix.style.top='0'
-}
+// let wid=innerWidth
+// if( wid <= 600 && scrollY >= 2427 ){
+//     let fix=document.querySelector('.project-upper')
+//     fix.style.position='sticky';
+//     fix.style.top='0'
+//     console.log(wid);
+// }
