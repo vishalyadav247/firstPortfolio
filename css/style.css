@@ -272,6 +272,7 @@ header a:hover {
     align-items: center;
     justify-content: center;
     padding-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .skills_main {
@@ -310,10 +311,6 @@ header a:hover {
     padding: 5px 20px;
 }
 
-.skills-bottom {
-    padding: 20px 0px 50px 0px;
-    text-align: center;
-}
 
 /* project section */
 #project{
