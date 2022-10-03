@@ -1,7 +1,7 @@
 /* responsive settings for max-width 900px */
 @media only screen and (max-width:920px) {
     .navbar {
-        position:absolute;
+        position: absolute;
         top: -400px;
         padding-top: 30px;
         flex-direction: column;
@@ -9,13 +9,14 @@
         align-items: start;
         z-index: 2;
     }
-    
-    .navbar li a{
+
+    .navbar li a {
         color: var(--fontColor2);
         font-size: 24px;
         padding: 7px 200px 7px 30px;
     }
-    .navbar li{
+
+    .navbar li {
         margin: 15px 0px;
     }
 
@@ -26,14 +27,15 @@
         top: 25px;
         z-index: 1;
     }
-     #bar2 {
+
+    #bar2 {
         display: none;
         position: fixed;
         right: 25px;
         top: 25px;
         color: var(--fontColor2);
         z-index: 3;
-         } 
+    }
 
     .home {
         flex-direction: column;
@@ -56,6 +58,10 @@
         height: auto;
     }
 
+    .skills_item {
+        width: 47%;
+    }
+
 
     .project-lower {
         width: 76%;
@@ -66,26 +72,31 @@
 
     }
 
-    .contact_heading_box{
+    .contact_heading_box {
         font-size: 2.3rem;
         width: 75px;
         height: 75px;
-        padding-top: 12px; 
+        padding-top: 12px;
         margin: 70px 13px;
     }
-    #contact_heading::before{
+
+    #contact_heading::before {
         height: 300px;
     }
-    #contact_heading{
+
+    #contact_heading {
         height: 300px;
     }
-    .footer-address ,.footer-menu,.footer-menu2{
+
+    .footer-address, .footer-menu, .footer-menu2 {
         width: 100%;
 
     }
-    .footer-address ,.footer-menu {
+
+    .footer-address, .footer-menu {
         margin-left: 0px;
     }
+
     .footer-menu2 {
         margin-top: -25px;
     }
@@ -110,28 +121,31 @@
     .about_links a {
         margin: 5px;
     }
-    .skills_heading{
+
+    .skills_heading {
         width: 100%;
         padding: 10px;
     }
 
-    .skills{
+    .skills {
         overflow-x: scroll;
         align-items: start;
         justify-content: start;
     }
-    .skills_main {
-        padding:0px 10px;
-        flex-flow: row nowrap;
-        width: 1800px;
-        align-items: start;
-        justify-content:space-between;
-    }
-    .skills-bottom {
-        padding-left: 10px;
 
+    .skills_main {
+        padding: 0px 10px;
+        flex-flow: row nowrap;
+        width: 2000px;
+        align-items: start;
+        justify-content: space-between;
     }
-    .skills_heading h4{
+    .skills_item{
+        width: 300px;
+        height: 310px;
+    }
+
+    .skills_heading h4 {
         font-size: 24px;
     }
 
@@ -139,19 +153,23 @@
         font-size: 1.1rem;
         width: 353px;
     }
-.project-upper{
-    width: 100%;
-    padding: 0px 10px;
-}
-    .project-upper{
+
+    .project-upper {
+        width: 100%;
+        padding: 0px 10px;
+    }
+
+    .project-upper {
         height: 130px;
     }
-    .project-lower{
+
+    .project-lower {
         width: 100%;
         padding: 10px;
-  
+
     }
-    .project-items{
+
+    .project-items {
         width: 100%;
         height: 470px;
     }
@@ -159,39 +177,44 @@
     form {
         width: 96%;
     }
-    .contact_heading_box{
+
+    .contact_heading_box {
         font-size: 1.5rem;
         width: 55px;
         height: 55px;
-        padding-top: 12px; 
+        padding-top: 12px;
         margin: 70px 5px;
-        border:2px solid grey;
+        border: 2px solid grey;
         font-weight: bold;
     }
-    #contact_heading::before{
+
+    #contact_heading::before {
         height: 250px;
     }
-    #contact_heading{
+
+    #contact_heading {
         height: 250px;
     }
+
     .footer-links {
         width: 90%;
     }
-    .footer-strip{
+
+    .footer-strip {
         width: 90%;
     }
 }
 
 @media only screen and (max-width:450px) {
 
-    .contact_heading_box{
+    .contact_heading_box {
         font-size: 1.3rem;
         width: 40px;
         height: 40px;
-        padding-top: 6px; 
+        padding-top: 6px;
         margin: 70px 3px;
-        border:2px solid grey;
+        border: 2px solid grey;
         font-weight: bold;
     }
- 
+
 }
