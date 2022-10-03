@@ -56,13 +56,14 @@
         height: auto;
     }
 
+
     .project-lower {
         width: 76%;
     }
 
     .project-items {
         width: 43%;
-        height: 500px;
+
     }
 
     .contact_heading_box{
@@ -138,12 +139,17 @@
         font-size: 1.1rem;
         width: 353px;
     }
+.project-upper{
+    width: 100%;
+    padding: 0px 10px;
+}
     .project-upper{
         height: 130px;
     }
     .project-lower{
         width: 100%;
         padding: 10px;
+        height: 500px;
     }
     .project-items{
         width: 100%;
