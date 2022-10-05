@@ -1,13 +1,19 @@
 console.log("welcome to javascript");
 
 // navbar animation on scroll
-// let navbar = document.querySelector('.navbar')
-// window.addEventListener('scroll', function (event) {
-//     event.preventDefault()
-//     if (window.scrollY <= 570) {
-//     } else {
-//     }
-// })
+let navbar = document.querySelector('.navbar')
+window.addEventListener('scroll', function (event) {
+    event.preventDefault()
+    if (window.scrollY <= 570) {
+        navbar.style.backgroundColor = 'white';
+        navbar.style.borderBottom = '0'
+
+
+    } else {
+        navbar.style.backgroundColor = 'white';
+        navbar.style.borderBottom = '1px solid grey';
+    }
+})
 
 // type effect
 let typed = new Typed(".animated_text", {
@@ -19,35 +25,23 @@ let typed = new Typed(".animated_text", {
 
 // Menu show hide button
 let menuSideBar = document.getElementById("bar");
-let menuSideBar2 = document.getElementById("bar2");
+let menuLinks = document.getElementById("allLinks");
 
-
-let menuLinks = document.getElementById("nav");
-let links = document.querySelectorAll('.navbar_links');
+menuSideBar.addEventListener("click", show)
 menuLinks.addEventListener('click', (e) => {
     if (e.target) { hide() }
 })
 
 function show() {
-    menuLinks.style.top='0px'
-    menuSideBar2.style.display='block'
-
+    menuLinks.style.top = "-2px"
 }
+
 function hide() {
     menuLinks.style.top = "-400px"
-    menuSideBar2.style.display='none'
-    
 }
 
-menuSideBar.addEventListener("click", show)
-
-menuSideBar2.addEventListener("click", hide)
-
-
-
-
-
 // contact form validation
+
 let user = document.getElementById('name')
 let phone = document.getElementById('phone')
 let email = document.getElementById('email')
@@ -126,10 +120,3 @@ submit.addEventListener('click', (e) => {
     }
 })
 
-// let wid=innerWidth
-// if( wid <= 600 && scrollY >= 2427 ){
-//     let fix=document.querySelector('.project-upper')
-//     fix.style.position='sticky';
-//     fix.style.top='0'
-//     console.log(wid);
-// }

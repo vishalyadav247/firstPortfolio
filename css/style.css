@@ -17,16 +17,18 @@ header {
     top: 0px;
     transition: all 0.5s;
     z-index: 2;
+    padding-right: 20px;
 }
 
 .navbar {
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
+    float: right;
     list-style: none;
     padding: 10px;
-    width: 100%;
+    width: 48%;
     transition: all 0.5s;
 }
 
@@ -42,7 +44,7 @@ header a {
     text-decoration: none;
     font-family: 'Gilda Display', serif;
     color: var(--fontBlack);
-    font-weight: bolder;
+    /* font-weight: lighter; */
     font-size: 1.1rem;
     transition: all 0.5s;
     text-transform: uppercase;
@@ -145,7 +147,7 @@ header a:hover {
 .home_right img {
     width: 62%;
     height: 50%;
-    outline: 2px solid grey;
+    /* outline: 2px solid grey; */
     outline-offset: 10px;
 }
 
@@ -243,7 +245,7 @@ header a:hover {
 .skills_heading {
     width: 69%;
     margin: auto;
-    padding-top: 50px;
+    margin-top: 50px;
 }
 
 .skills_heading h3 {
@@ -271,13 +273,12 @@ header a:hover {
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .skills_main {
     width: 73%;
-    margin: 30px 0px;
+    margin-top: 30px;
     height: auto;
     display: flex;
     flex-flow: row wrap;
@@ -289,7 +290,6 @@ header a:hover {
     width: 30%;
     height: 290px;
     margin: 20px 0px;
-
     text-align: center;
     border: 1px solid silver;
     transition: all 1s;
@@ -316,7 +316,7 @@ header a:hover {
 /* project section */
 #project{
     background-color: rgb(231, 231, 231);
-    padding: 70px 0px;
+    padding: 60px 0px;
 }
 
 .project-upper {
@@ -354,6 +354,7 @@ header a:hover {
     /* border: 3px solid grey; */
     transition: all 1s;
     background-color: black;
+    z-index: 1;
 }
 .project-items:hover{
     color: white;
@@ -374,7 +375,7 @@ header a:hover {
     position: absolute;
     top: 50px;
     left: 0px;
-    z-index: 10;
+    z-index: 2;
     letter-spacing: 2px;
 }
 

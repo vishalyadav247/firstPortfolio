@@ -7,7 +7,7 @@
         flex-direction: column;
         background-color: var(--themeColor2);
         align-items: start;
-        z-index: 2;
+        z-index: 10;
     }
 
     .navbar li a {
@@ -34,7 +34,7 @@
         right: 25px;
         top: 25px;
         color: var(--fontColor2);
-        z-index: 3;
+        z-index: 11;
     }
 
     .home {
@@ -136,12 +136,12 @@
     .skills_main {
         padding: 0px 10px;
         flex-flow: row nowrap;
-        width: 2000px;
+        width: 2100px;
         align-items: start;
         justify-content: space-between;
     }
     .skills_item{
-        width: 300px;
+        width: 260px;
         height: 310px;
     }
 
@@ -167,7 +167,7 @@
 
     .project-items {
         width: 100%;
-        height: 470px;
+        height: 500px;
     }
 
     form {
