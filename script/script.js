@@ -1,19 +1,19 @@
 console.log("welcome to javascript");
 
 // navbar animation on scroll
-let navbar = document.querySelector('.navbar')
-window.addEventListener('scroll', function (event) {
-    event.preventDefault()
-    if (window.scrollY <= 570) {
-        navbar.style.backgroundColor = 'white';
-        navbar.style.borderBottom = '0'
+// let navbar = document.querySelector('.navbar')
+// window.addEventListener('scroll', function (event) {
+//     event.preventDefault()
+//     if (window.scrollY <= 570) {
+//         navbar.style.backgroundColor = 'white';
+//         navbar.style.borderBottom = '0'
 
 
-    } else {
-        navbar.style.backgroundColor = 'white';
-        navbar.style.borderBottom = '1px solid grey';
-    }
-})
+//     } else {
+//         navbar.style.backgroundColor = 'white';
+//         navbar.style.borderBottom = '1px solid grey';
+//     }
+// })
 
 // type effect
 let typed = new Typed(".animated_text", {
@@ -25,19 +25,26 @@ let typed = new Typed(".animated_text", {
 
 // Menu show hide button
 let menuSideBar = document.getElementById("bar");
-let menuLinks = document.getElementById("allLinks");
+let menuSideBar2 = document.getElementById("bar2");
+let menuLinks = document.getElementById("nav");
 
 menuSideBar.addEventListener("click", show)
+
+menuSideBar2.addEventListener('click', (e) => {
+    if (e.target) { hide() }
+})
 menuLinks.addEventListener('click', (e) => {
     if (e.target) { hide() }
 })
 
 function show() {
     menuLinks.style.top = "-2px"
+    menuSideBar2.style.display='block'
 }
 
 function hide() {
     menuLinks.style.top = "-400px"
+    menuSideBar2.style.display='none'
 }
 
 // contact form validation
