@@ -1,24 +1,26 @@
 console.log("welcome to javascript");
 
 // navbar animation on scroll
-// let navbar = document.querySelector('.navbar')
-// window.addEventListener('scroll', function (event) {
-//     event.preventDefault()
-//     if (window.scrollY <= 570) {
-//         navbar.style.backgroundColor = 'white';
-//         navbar.style.borderBottom = '0'
-
-
-//     } else {
-//         navbar.style.backgroundColor = 'white';
-//         navbar.style.borderBottom = '1px solid grey';
-//     }
-// })
+let navbar = document.getElementById('header')
+window.addEventListener('scroll', function (event) {
+    event.preventDefault()
+    if (window.scrollY <= 570) {
+        navbar.style.backgroundColor = 'transparent';
+        navbar.style.boxShadow='1px 1px 5px black'
+        
+        
+        
+        
+    } else {
+        navbar.style.backgroundColor = 'silver';
+        navbar.style.boxShadow='1px 1px 5px black'
+    }
+})
 
 // type effect
 let typed = new Typed(".animated_text", {
     strings: ["I'm a Web Developer", "I Love to Design UI"],
-    typeSpeed: 100,
+    typeSpeed: 150,
     backSpeed: 100,
     loop: true,
 })
