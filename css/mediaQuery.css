@@ -1,3 +1,12 @@
+@media only screen and (max-width:1024px) {
+    .contact {
+        flex-flow: row wrap;
+    }
+    .contactBox{
+        margin-bottom: 60px;
+    }
+}
+
 /* responsive settings for max-width 900px */
 @media only screen and (max-width:920px) {
     .navbar {
@@ -8,13 +17,12 @@
         background-color: var(--themeColor2);
         align-items: start;
         z-index: 10;
-        width: 100%;
     }
 
     .navbar li a {
         color: var(--fontColor2);
         font-size: 24px;
-        padding: 7px 200px 7px 30px;
+        padding: 7px 20px 7px 30px;
     }
 
     .navbar li {
@@ -23,7 +31,7 @@
 
     #bar {
         display: block;
-        position: fixed;
+        position: absolute;
         right: 25px;
         top: 25px;
         z-index: 1;
@@ -31,7 +39,7 @@
 
     #bar2 {
         display: none;
-        position: fixed;
+        position: absolute;
         right: 25px;
         top: 25px;
         color: var(--fontColor2);
@@ -73,21 +81,6 @@
 
     }
 
-    .contact_heading_box {
-        font-size: 2.3rem;
-        width: 75px;
-        height: 75px;
-        padding-top: 12px;
-        margin: 70px 13px;
-    }
-
-    #contact_heading::before {
-        height: 300px;
-    }
-
-    #contact_heading {
-        height: 300px;
-    }
 
     .footer-address, .footer-menu, .footer-menu2 {
         width: 100%;
@@ -141,7 +134,8 @@
         align-items: start;
         justify-content: space-between;
     }
-    .skills_item{
+
+    .skills_item {
         width: 260px;
         height: 310px;
     }
@@ -171,26 +165,15 @@
         height: 500px;
     }
 
-    form {
-        width: 96%;
+    .contact{
+        width: 100%;
+        padding: 100px 10px;
     }
-
-    .contact_heading_box {
-        font-size: 1.5rem;
-        width: 55px;
-        height: 55px;
-        padding-top: 12px;
-        margin: 70px 5px;
-        border: 2px solid grey;
-        font-weight: bold;
+    .contactBox{
+        width: 100%;
     }
-
-    #contact_heading::before {
-        height: 250px;
-    }
-
-    #contact_heading {
-        height: 250px;
+    #contactForm{
+        width: 100%;
     }
 
     .footer-links {

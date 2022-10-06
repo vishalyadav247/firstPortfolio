@@ -4,16 +4,18 @@ console.log("welcome to javascript");
 let navbar = document.getElementById('header')
 window.addEventListener('scroll', function (event) {
     event.preventDefault()
-    if (window.scrollY <= 570) {
+    if (this.innerWidth > 912) {
+        if (window.scrollY <= 570) {
+            navbar.style.backgroundColor = 'transparent';
+            navbar.style.boxShadow = '1px 1px 5px black'
+        } else {
+            navbar.style.backgroundColor = 'silver';
+            navbar.style.boxShadow = '1px 1px 5px black'
+        }
+    } 
+    else {
         navbar.style.backgroundColor = 'transparent';
-        navbar.style.boxShadow='1px 1px 5px black'
-        
-        
-        
-        
-    } else {
-        navbar.style.backgroundColor = 'silver';
-        navbar.style.boxShadow='1px 1px 5px black'
+        navbar.style.boxShadow = '0px 0px 0px black'
     }
 })
 
@@ -41,12 +43,12 @@ menuLinks.addEventListener('click', (e) => {
 
 function show() {
     menuLinks.style.top = "-2px"
-    menuSideBar2.style.display='block'
+    menuSideBar2.style.display = 'block'
 }
 
 function hide() {
     menuLinks.style.top = "-400px"
-    menuSideBar2.style.display='none'
+    menuSideBar2.style.display = 'none'
 }
 
 // contact form validation
@@ -124,7 +126,7 @@ submit.addEventListener('click', (e) => {
     }
     else {
         e.preventDefault()
-        submit.innerText="Enter Valid Information"
+        submit.innerText = "Enter Valid Information"
         console.log('error in sumbit the form');
     }
 })

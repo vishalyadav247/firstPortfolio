@@ -13,6 +13,7 @@ body {
 
 /* header styling */
 header {
+    box-sizing: border-box;
     position: sticky;
     top: 0px;
     transition: all 0.5s;
@@ -22,14 +23,12 @@ header {
 
 .navbar {
     height: auto;
-    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
-    padding: 15px 10px;
+    padding: 15px 0px;
     width: 100%;
-    padding-left:60px ;
     transition: all 0.5s;
 }
 
@@ -158,7 +157,6 @@ header a:hover {
     justify-content: center;
     width: 50%;
     height: 641px;
-    /* background-color: var(--themeColor2); */
 }
 
 .home_right img {
@@ -168,18 +166,6 @@ header a:hover {
     outline-offset: 10px;
 }
 
-
-/* about section styling */
-/* .about::before {
-    position:absolute;
-    content: "";
-    top: 570px;
-
-    opacity:0.8;
-    width: 100%;
-    height:130vh;
-    z-index: -2;
-} */
 
 .about {
     position: relative;
@@ -267,9 +253,7 @@ header a:hover {
 
 .skills_heading h3 {
     text-transform: uppercase;
-    /* font-family: Barlow Condensed; */
     margin-bottom: 10px;
-    /* font-weight: 300; */
     font-size: 15px;
     color: grey;
     letter-spacing: 2px;
@@ -415,11 +399,6 @@ header a:hover {
 
 
 /* contact section */
-
-
-
-
-
 .contact {
     width: 70%;
     height: auto;
@@ -442,7 +421,6 @@ header a:hover {
 }
 
 .contactItems span {
-    background-color: rgb(224, 220, 220);
     background-color: var(--bgColor);
     border-radius: 20%;
     font-size: 50px;
@@ -452,7 +430,7 @@ header a:hover {
 .contactItems p {
     margin-left: 20px;
     font-size: 20px;
-    color: grey;
+    color: var(--fontColor2);
     font-weight: bold;
 }
 
