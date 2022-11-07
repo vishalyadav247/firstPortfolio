@@ -1,6 +1,10 @@
 console.log("welcome to javascript");
 
 // navbar animation on scroll
+let link=document.querySelectorAll('.navbar_links a')[0]
+let link2=document.querySelectorAll('.navbar_links a')[1]
+let link3=document.querySelectorAll('.navbar_links a')[2]
+
 let navbar = document.getElementById('header')
 let verticalNav=document.getElementById('verticalNav')
 window.addEventListener('scroll', function (event) {
@@ -8,8 +12,16 @@ window.addEventListener('scroll', function (event) {
     if (this.innerWidth > 912) {
         if (window.scrollY <= 570) {
             navbar.style.backgroundColor = 'transparent';
+            link.style.color='white'
+            link2.style.color='white'
+            link3.style.color='white'
+
+
         } else {
             navbar.style.backgroundColor = 'white';
+            link.style.color='black'
+            link2.style.color='black'
+            link3.style.color='black'
         }
     } 
     else {
@@ -46,12 +58,12 @@ menuLinks.addEventListener('click', (e) => {
 })
 
 function show() {
-    menuLinks.style.top = "-2px"
+    menuLinks.style.right= "0px"
     menuSideBar2.style.display = 'block'
 }
 
 function hide() {
-    menuLinks.style.top = "-400px"
+    menuLinks.style.right = "-420px"
     menuSideBar2.style.display = 'none'
 }
 

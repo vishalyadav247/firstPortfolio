@@ -4,11 +4,13 @@
     --themeFont: 'Ubuntu', sans-serif;
 
     --fontBlack:rgb(51, 47, 36) ;
+    --fontBlack2:rgb(177, 177, 177) ;
+
     --fontColor:#201e1a;
     --fontColor2: #c98c41;
 
 
-    --themeColor: #5699a8;
+    --themeColor: rgb(61, 141, 155);;
     --themeColor1:#798EA4;
     --themeColor2: #22211F;
 

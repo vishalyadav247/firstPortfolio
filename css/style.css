@@ -8,6 +8,7 @@
 
 body {
     background-color:rgba(208, 208, 208, 0.376);
+    background-color: white;
 }
 
 
@@ -180,64 +181,48 @@ header a:hover {
 
 
 .about {
-    position: relative;
-    top: -65px;
     display: flex;
-    justify-content: center;
-    padding: 120px 0px 0px 0px;
-    height: auto;
-    background-image: url('../images/aboutBg1.jpg');
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position-y: -80px;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid grey;
+
+}
+.about_right{
+    border: 3px solid silver;
+    width: 50%;
+    padding:40px 10px 25px 40px;
+    background-color: grey;
+}
+.about_text {
+    color:black;
+    font-size: 1.6rem;
+    text-decoration: underline;
+    text-decoration-color: silver;
+    text-decoration-thickness: 1px;
+    font-weight:500;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: barlow Condensed;
 
 }
 
 .about_left {
-    width: 70%;
-    height: auto;
+    width: 50%;
     display: flex;
-    padding: 10px;
+    padding: 25px;
     flex-direction: column;
     justify-content: center;
+    background-color: rgb(242, 250, 215);
 }
 
 .about_left h3 {
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    padding: 15px 15px;
-    font-size: 2.3rem;
-    color: white;
-    width: 225px;
-    background-color: var(--themeColor);
-    border-left: 7px solid var(--fontColor);
-}
-
-.about_left h4 {
-    color: var(--themeColor);
-    width: auto;
-    padding: 3px 0px;
-    border: 2px solid var(--themeColor);
-    border-left: 0;
-    border-right: 0;
-    
-}
-
-.about_text {
-    margin: 30px 0px;
-    padding: 35px 0px;
-    color: var(--fontColor);
-    font-size: 1.4rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    border-radius: 10px;
-    text-align: left;
-
+ margin-bottom:45px;
 }
 
 .about_links {
-    margin-bottom: 20px;
+    margin: 70px 0px 30px 0px;
     text-align: center;
 }
 
@@ -311,12 +296,12 @@ header a:hover {
 .skills i {
     padding: 20px;
     font-size: 60px;
-    color: var(--fontColor2);
+    color: var(--themeColor);
 }
 
 .skills_item h4 {
-    margin-bottom: 10px;
-    color: var(--fontColor2);
+    margin-bottom: 25px;
+    color: var(--themeColor);
 }
 
 .skills_item p {
@@ -328,7 +313,7 @@ header a:hover {
 
 /* project section */
 #project{
-    background-color: silver;
+    background-color: rgb(61, 141, 155);
     padding: 100px 0px;
 }
 
@@ -347,6 +332,7 @@ header a:hover {
 }
 
 .project-lower {
+
     display: flex;
     align-items:center;
     justify-content: space-evenly;
@@ -354,6 +340,7 @@ header a:hover {
     height: auto;
     width: 73%;
     margin: auto;
+    margin-top: 15px;
     /* padding: 20px 0px; */
 }
 
@@ -361,8 +348,8 @@ header a:hover {
     position: relative;
     width:30%;
     margin-top: 20px;
-    height: 400px;
-    /* border: 3px solid grey; */
+    height: 380px;
+    border: 5px solid var(--fontColor2);
     transition: all 1s;
     background-color: black;
     z-index: 1;
@@ -499,7 +486,7 @@ form input, textarea {
     display: flex;
     justify-content: center;
     align-items: start;
-    border-top: 3px solid silver;
+    border-top: 1px solid silver;
 }
 .contactBottom p{
     margin-top: -17px;
@@ -516,7 +503,7 @@ footer {
     width: 100%;
     height: auto;
     padding: 50px 0px 10px 0px;
-    background-color: var(--themeColor3);
+    background-color: var(--themeColor);
     border-top: 0px;
     
 }
@@ -559,17 +546,14 @@ footer {
     font-weight: 600;
     letter-spacing: 2px;
     font-family: var(--themeFont);
+    color:white;
+    color:var(--fontColor2);
     color: var(--fontBlack);
-    border-bottom: 1px solid grey;
+
     width: 150px;
 
 }
-.footer-menu li:hover{
-    border-bottom: 2px solid var(--themeColor);
-}
-.footer-menu2 li:hover{
-    border-bottom: 2px solid var(--themeColor);
-}
+
 .footer-menu2 {
     margin-top: 70px;
 }
@@ -607,11 +591,11 @@ footer {
     font-family:'Barlow Condensed', sans-serif;
     text-transform: uppercase;
     font-size: 13px;
-    color:grey;
+    color:silver;
     padding: 12px 0px 8px 0px;
     letter-spacing: 2px;
     text-align: center;
-    border-top: 1px solid grey;
+    border-top: 1px solid var(--fontBlack);
     width: 70%;
     margin: auto;
 
