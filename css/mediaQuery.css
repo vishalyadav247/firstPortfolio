@@ -11,7 +11,7 @@
 @media only screen and (max-width:920px) {
     .navbar {
         position: absolute;
-        right: -420px;
+        top: -400px;
         padding-top: 30px;
         flex-direction: column;
         background-color: var(--themeColor2);
@@ -37,7 +37,7 @@
         z-index: 1;
     }
     #link-4{
-        margin-bottom: 100px;
+        margin-bottom: 80px;
     }
     #bar2 {
         display: none;

@@ -58,12 +58,12 @@ menuLinks.addEventListener('click', (e) => {
 })
 
 function show() {
-    menuLinks.style.right= "0px"
+    menuLinks.style.top= "-2px"
     menuSideBar2.style.display = 'block'
 }
 
 function hide() {
-    menuLinks.style.right = "-420px"
+    menuLinks.style.top = "-400px"
     menuSideBar2.style.display = 'none'
 }
 
