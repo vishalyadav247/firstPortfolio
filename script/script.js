@@ -2,20 +2,24 @@ console.log("welcome to javascript");
 
 // navbar animation on scroll
 let navbar = document.getElementById('header')
+let verticalNav=document.getElementById('verticalNav')
 window.addEventListener('scroll', function (event) {
     event.preventDefault()
     if (this.innerWidth > 912) {
         if (window.scrollY <= 570) {
             navbar.style.backgroundColor = 'transparent';
-            navbar.style.boxShadow = '1px 1px 5px black'
         } else {
-            navbar.style.backgroundColor = 'silver';
-            navbar.style.boxShadow = '1px 1px 5px black'
+            navbar.style.backgroundColor = 'white';
         }
     } 
     else {
         navbar.style.backgroundColor = 'transparent';
-        navbar.style.boxShadow = '0px 0px 0px black'
+    }
+
+    if (window.scrollY >= 570) {
+        verticalNav.style.left='10px';
+    } else {
+        verticalNav.style.left='-80px';
     }
 })
 
