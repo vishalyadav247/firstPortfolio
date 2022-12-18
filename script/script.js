@@ -63,7 +63,7 @@ function show() {
 }
 
 function hide() {
-    menuLinks.style.top = "-400px"
+    menuLinks.style.top = "-430px"
     menuSideBar2.style.display = 'none'
 }
 
@@ -147,3 +147,27 @@ submit.addEventListener('click', (e) => {
     }
 })
 
+
+window.addEventListener("scroll",scrlFun);
+function scrlFun(){
+    let docHeight=$(document).height()
+    let scrlHeight=(scrollY/docHeight)*120
+    let scrl=document.querySelectorAll('.scrl-bar')[0];
+    scrl.style.width=`${scrlHeight}%`
+}
+function iframeWidth(xx) {
+    if (xx.matches) { // If media query matches
+      let ifrm=document.getElementById('location-frame')
+      console.log(ifrm);
+      ifrm.setAttribute("width","100%")
+      console.log('mob');
+    } else {
+      let ifrm=document.getElementById('location-frame')
+      ifrm.setAttribute("width","400px")
+      console.log('desk');
+
+    }
+  }
+  
+  let xx = window.matchMedia("(max-width: 820px)")
+  iframeWidth(xx);

@@ -43,18 +43,21 @@
     <!-- header section -->
     <header id="header">
         <ul id="nav" class="navbar">
-            <!-- <li class="navbar_links"><a href="#Home">Home</a></li> -->
+            <li class="navbar_links"><a href="#Home">Home</a></li>
             <li class="navbar_links"><a href="#About">About</a></li>
             <li class="navbar_links"><a href="#skil">Skills</a></li>
             <li class="navbar_links"><a href="#project">Projects</a></li>
-            <li class="navbar_links" id='link-4'><a  style='color:  #5699a8;font-size: 1.15rem;border-bottom:3px solid  #5699a8 ;padding: 10px 5px 10px 0px;margin-left: 30px;' href="#Contact">Get In Touch </a></li>
+            <li class="navbar_links" id='link-4'><a href="#Contact">Get In Touch </a></li>
         </ul>
         <span id="bar" class="material-symbols-outlined" style="font-size: 45px;">menu</span>
         <span id="bar2" class="material-symbols-outlined" style="font-size: 45px;">
             close
         </span>
-
     </header>
+    <div class="scrl">
+        <div class="scrl-bar"></div>
+    </div>
+
 
     <div id="verticalNav">
         <a href="https://api.whatsapp.com/send?phone=917669664266">
@@ -84,14 +87,18 @@
         </div>
 
         <div class="home_right">
-          
+            <div class="home-image-cover">
+            <img src="./images/png1.png" alt="" >
+        </div>
         </div>
     </section>
 
     <!-- about section -->
-    <section id="About" class="about">
+    <div id="About">
+    <section  class="about">
         <div class="about_left">
-            <h3>About Me </h3>
+            <h3>About ME</h3>
+            <div class="line"></div>
             <img src="images/a.jpg" alt="">
             <div class="about_links">
                 <a href="myResume.pdf" download="Vishal Yadav"> Download CV</a>
@@ -109,11 +116,12 @@
             </p>
         </div>
     </section>
+</div>
 
     <!-- skills section -->
     <div class="skills_heading" id="skil">
         <h3>SKILLS</h3>
-        <h4>UI Development Skills</h4>
+        <h4>Development Skills</h4>
     </div>
     <section class="skills">
         <div class="skills_main">
@@ -139,6 +147,12 @@
                 <p>- Familear with Bootstrap 5 to make</p>
             </div>
             <div class="skills_item">
+                <i class="fa-brands fa-bootstrap"></i>
+                <h4>BOOTSTRAP</h4>
+                <p>- Ready to work with React JS library to build Single page Web applications .</p>
+                <p>- Familear with Bootstrap 5 to make Web
+            </div>
+            <div class="skills_item">
                 <i class="fa-brands fa-react"></i>
                 <h4>React Js</h4>
                 <p>- Ready to work with React JS library to build Single page Web applications .</p>
@@ -152,10 +166,11 @@
                 <p>- Team Work coordination</p>
             </div>
             <div class="skills_item">
-                <i class="fa-brands fa-bootstrap"></i>
-                <h4>BOOTSTRAP</h4>
-                <p>- Ready to work with React JS library to build Single page Web applications .</p>
-                <p>- Familear with Bootstrap 5 to make Web
+                <i class="fa-brands fa-shopify"></i>
+                <h4>Shopify</h4>
+                <p>- Communication Skills</p>
+                <p>- Critical Problem Solving</p>
+                <p>- Team Work coordination</p>
             </div>
             <div class="skills_item">
                 <i class="fa-brands fa-square-github"></i>
@@ -164,11 +179,14 @@
                 <p>- Critical Problem Solving</p>
                 <p>- Team Work coordination</p>
             </div>
+            
         </div>
     </section>
 
     <!-- project -->
+    <div class="rotUpper">
     <section id="project">
+        <div class="rotInner">
         <div class="project-upper">
             <h5>PORTFOLIO</h5>
             <h3>My Latest Work</h3>
@@ -194,48 +212,47 @@
                 <span class="project-label">keeping notes</span>
             </div>
         </div>
-
+    </div>
     </section>
+</div>
 
     <!-- contect section -->
-    <section id="Contact" class="contact">
-        <div class="contactBox">
-            <div>
-                <h5>CONTACT ME</h5>
-                <h3 style="margin-top:10PX ;">Get In Touch</h3>
+    <div class="contact-wrapper">
+        <section id="Contact" class="contact">
+            <div class="contactBox">
+                <div>
+                    <h5>CONTACT ME</h5>
+                    <h3 style="margin-top:10PX ;">Get In Touch</h3>
+                </div>
+                <div class="contactItems">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d108775.33759311876!2d77.38281218763909!3d28.522356960968246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1665423029072!5m2!1sen!2sin"
+                        width="400" height="250" style="border:1px solid silver;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" id="location-frame"></iframe>
+                </div>
             </div>
-            <div class="contactItems">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d108775.33759311876!2d77.38281218763909!3d28.522356960968246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1665423029072!5m2!1sen!2sin"
-                    width="400" height="250" style="border:1px solid silver;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-        <form action="" id="contactForm">
-            <div class="formItem_1">
-                <input type="text" id="name" name="name" placeholder="Enter Your Name">
+            <form action="" id="contactForm">
+                <div class="formItem_1">
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name">
 
-                <input type="tel" id='phone' name="phone" placeholder="Enter Your Contact No.">
-            </div>
-            <div class="formItem_2">
-                <input type="email" id='email' name="email" placeholder="Enter Your E-mail Id">
-            </div>
-            <div class="formItem_3">
-                <textarea name="message" id="" cols="30" rows="4" placeholder="Enter Your Message Here"></textarea>
-            </div>
-            <div class="formItem_4">
-                <input type="submit" value="Submit" id='submit' style="padding: 8px 0px;">
-            </div>
+                    <input type="tel" id='phone' name="phone" placeholder="Enter Your Contact No.">
+                </div>
+                <div class="formItem_2">
+                    <input type="email" id='email' name="email" placeholder="Enter Your E-mail Id">
+                </div>
+                <div class="formItem_3">
+                    <textarea name="message" id="" cols="30" rows="4" placeholder="Enter Your Message Here"></textarea>
+                </div>
+                <div class="formItem_4">
+                    <input type="submit" value="Submit" id='submit' style="padding: 8px 0px;">
+                </div>
 
-        </form>
+            </form>
+        </section>
+        <div class="contactBottom">
+
         </div>
-    </section>
-    <div class="contactBottom">
-        <!-- <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=vishalyadav247@gmail.com" target="_blank" style="text-decoration:none;">
-            <p>vishalyadav247@gmail.com</p>
-        </a> -->
     </div>
-
     <!-- footer section -->
 
     <footer>
@@ -243,12 +260,16 @@
             <div class="footer-address">
                 <h4>Get In Touch</h4>
                 <ul style="list-style: none;">
-                    <li> <i class="fa-solid fa-phone " style="color:rgb(51, 47, 36);font-size: 16px;margin-right: 9px;"></i>&nbsp;+91-
-                            7669664266</li>
-                    <li><a href="https://mail.google.com/mail/?view=cm&source=mailto&to=vishalyadav247@gmail.com" target="_blank" style="text-decoration:none;color:rgb(51, 47, 36);">
-                        <p><i class="fa-solid fa-envelope" style="color:rgb(51, 47, 36);font-size: 16px;margin-right: 10px;"></i> vishalyadav247@gmail.com</p>
-                    </a>
-                </li>
+                    <li> <i class="fa-solid fa-phone "
+                            style="color:rgb(51, 47, 36);font-size: 16px;margin-right: 9px;"></i>&nbsp;+91-
+                        7669664266</li>
+                    <li><a href="https://mail.google.com/mail/?view=cm&source=mailto&to=vishalyadav247@gmail.com"
+                            target="_blank" style="text-decoration:none;color:rgb(51, 47, 36);">
+                            <p><i class="fa-solid fa-envelope"
+                                    style="color:rgb(51, 47, 36);font-size: 16px;margin-right: 10px;"></i>
+                                vishalyadav247@gmail.com</p>
+                        </a>
+                    </li>
                 </ul>
                 <div class="footer-icon">
                     <p>Follow Me On :</p>

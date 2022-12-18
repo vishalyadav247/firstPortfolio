@@ -5,14 +5,70 @@
     .contactBox{
         margin-bottom: 60px;
     }
+    .home_left h1{
+        font-size:6rem ;
+    }
+    .home {
+        top: -100px;
+    }
+    #About{
+        padding-top: 0px;
+        margin-top: -30px;
+    }
+    .about_links a {
+        margin-right: 5px;
+    }
+    .about_text {
+        color: black;
+        font-size: 0.9rem;
+    }
+    .project-items {
+        height: 320px;
+    }
+    .contact{
+        justify-content: space-between;
+    }
+    .contactBox {
+        width: 45%;
+    }
+    #contactForm{
+        width: 50%;
+        padding-top: 10px;
+    }
 }
-
 /* responsive settings for max-width 900px */
 @media only screen and (max-width:920px) {
+    .about {
+        flex-direction: column;
+    }
+    .about_left{
+        width: 100%;
+    }
+    .about_right {
+        width: 100%;
+        padding: 0px;
+        padding-top: 40px ;
+    }
+    .home_right {
+        height: 100px;
+    }
+    .home-image-cover{
+        height: 500px;
+        right: 0px;
+        top: -199px;
+    }
+    .about_left{
+        padding-right: 0px;
+        
+    }
+    .about_left img{
+        padding: 40px 0px;
+    }
+    
     .navbar {
         position: absolute;
-        top: -400px;
-        padding-top: 30px;
+        top: -430px;
+        padding:70px 0px;
         flex-direction: column;
         background-color: var(--themeColor2);
         align-items: start;
@@ -35,9 +91,6 @@
         right: 25px;
         top: 25px;
         z-index: 1;
-    }
-    #link-4{
-        margin-bottom: 80px;
     }
     #bar2 {
         display: none;
@@ -97,8 +150,32 @@
     .footer-menu2 {
         margin-top: -25px;
     }
+    header{
+        height: 55px;
+    }
+    .scrl{
+        top:55px;
+    }
+    #bar{
+        top:5px;
+        right: 15px;
+    }
+    .contactBottom{
+        display: none;
+    }
+    .navbar_links a {
+        color:white !important;
+    }
 }
+@media only screen and (max-width:820px) {
+    .contactBox{
+        width: 100%;
+    }
 
+    #contactForm{
+        width: 100%;
+    }
+}
 /* responsive settings for max-width 600px */
 @media only screen and (max-width:600px) {
 
@@ -129,7 +206,7 @@
     .skills_heading {
         width: 100%;
         padding: 10px;
-        padding-top:60px;
+        padding-top:80px;
     }
 
     .skills {
@@ -193,6 +270,37 @@
 
     .footer-strip {
         width: 90%;
+    }
+    .home_left h1{
+        font-size:3rem ;
+    }
+    .home-image-cover{
+        top: -95px;
+    }
+    .home-image-cover img{
+        float: right;
+    }
+    .about{
+        padding: 0px 10px;
+    }
+    #project {
+        width: 86%;
+        padding-top: 20px;
+        padding-bottom: 70px;
+
+    }
+ 
+    .contact{
+        padding-bottom: 70px !important;
+    }
+    .skills_item{
+        margin-right: 10px;
+    }
+    .project-items{
+        height: 400px;
+    }
+    .about_left h3 {
+        margin-top: 0px;
     }
 }
 
