@@ -8,12 +8,11 @@
     .home_left h1{
         font-size:6rem ;
     }
-    .home {
+    /* .home {
         top: -100px;
-    }
+    } */
     #About{
-        padding-top: 0px;
-        margin-top: -30px;
+        padding-top: 25px;
     }
     .about_links a {
         margin-right: 5px;
@@ -150,11 +149,11 @@
     .footer-menu2 {
         margin-top: -25px;
     }
-    header{
+    /* header{
         height: 55px;
-    }
+    } */
     .scrl{
-        top:55px;
+        top:60px;
     }
     #bar{
         top:5px;
@@ -178,7 +177,15 @@
 }
 /* responsive settings for max-width 600px */
 @media only screen and (max-width:600px) {
-
+    .about_left img{
+        padding-top: 0px;
+    }
+    #About{
+        padding-top: 70px;
+    }
+    .project-upper {
+        justify-content:end;
+    }
     .animated_text {
         font-size: 35px;
     }
@@ -206,7 +213,13 @@
     .skills_heading {
         width: 100%;
         padding: 10px;
-        padding-top:80px;
+        padding-top:100px;
+    }
+    .skills_main {
+        margin-top: 0px;
+    }
+    .project-lower{
+        margin-top: 0px;
     }
 
     .skills {
