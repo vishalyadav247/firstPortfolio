@@ -319,9 +319,11 @@
 
             console.log('hiiii');
             Email.send({
-                SecureToken : "f2e1a3f5-f014-404e-a25d-a3762ad73ab1",
+                Host : "smtp.elasticemail.com",
+                Username : "vishal@justgoweb.com",
+                Password : "D8A7CD033BB8BAA420901C1741353D222D7E",
                 To : 'vishal@justgoweb.com',
-                From : document.getElementById('email').value,
+                From : 'vishal@justgoweb.com',
                 Subject : "Contact Form Enquiry",
                 Body : "Name" + document.getElementById('name').value
                     + "<br>Phone no" + document.getElementById('phone').value
