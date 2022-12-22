@@ -231,7 +231,7 @@
                         referrerpolicy="no-referrer-when-downgrade" id="location-frame"></iframe>
                 </div>
             </div>
-            <form id="contactForm" onsubmit="sendEmail();reset();return false;">
+            <form id="contactForm" onsubmit="reset();return false;">
                 <div class="formItem_1">
                     <input type="text" id="name" name="name" placeholder="Enter Your Name">
 
@@ -244,7 +244,7 @@
                     <textarea name="message" id="message" cols="30" rows="4" placeholder="Enter Your Message Here"></textarea>
                 </div>
                 <div class="formItem_4">
-                    <button type="submit" value="Submit" id='submit' style="padding: 8px 0px;">sub</button>
+                    <button type="submit" value="Submit" id='submit' style="padding: 8px 0px;" onclick="sendEmail()">sub</button>
                 </div>
 
             </form>
