@@ -71,7 +71,7 @@ function hide() {
 
 let user = document.getElementById('name')
 let phone = document.getElementById('phone')
-let email = document.getElementById('email')
+let emailVar = document.querySelectorAll('.ema')[0];
 
 
 let validName = false;
@@ -111,17 +111,17 @@ phone.addEventListener('blur', function ab() {
 
 })
 
-email.addEventListener('blur', function ab() {
+emailVar.addEventListener('blur', function ab() {
     let regExp = /^([a-zA-z0-9\._]+)@(([a-z]+)){5}\.([a-z]){3}$/;
-    let str = email.value;
+    let str = emailVar.value;
     let result3 = regExp.test(str)
     if (result3 != true) {
         console.log('enter correct email');
-        document.getElementById('email').style.border = '1px solid tomato'
+        document.querySelectorAll('.ema')[0].style.border = '1px solid tomato'
         validEmail = result3
     }
     else {
-        document.getElementById('email').style.border = '1px solid silver'
+        document.querySelectorAll('.ema')[0].style.border = '1px solid silver'
         validEmail = result3
     }
 })

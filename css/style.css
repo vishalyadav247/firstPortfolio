@@ -43,8 +43,6 @@ header {
 .navbar {
     height: auto;
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     list-style: none;
     padding: 15px 0px;
     width: 100%;
@@ -104,12 +102,13 @@ header {
 }
 
 .home_left {
+    /* padding-top: 50px; */
     display: flex;
     justify-content: end;
     align-items: center;
     flex-direction: column;
     width: 75%;
-    height: 655px;
+    height: 92vh;
     background-color: rgb(211, 211, 211);
 }
 .home_left h1{
@@ -184,7 +183,7 @@ header {
     display: flex;
     position: relative;
     width: 25%;
-    height: 655px;
+    height: 92vh;
     background-color: rgba(223, 223, 223, 0.836);
 }
 
@@ -199,7 +198,7 @@ height: 100%;
 }
 .home-image-cover{
     position: absolute;
-    bottom: 0px;
+    bottom: 50px;
 
 }
 
