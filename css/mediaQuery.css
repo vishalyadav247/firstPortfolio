@@ -177,6 +177,9 @@
 }
 /* responsive settings for max-width 600px */
 @media only screen and (max-width:600px) {
+    .home_left{
+        height: 60vh !important;
+    }
     .about_left img{
         padding-top: 0px;
     }
