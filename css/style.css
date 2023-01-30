@@ -3,12 +3,13 @@
     padding: 0;
     font-family: var(--themeFont);
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    
 }
 
 body {
     background-color: rgba(255, 60, 60, 0.376);
     background-color: white;
+    scroll-behavior: smooth !important;
 }
 
 
