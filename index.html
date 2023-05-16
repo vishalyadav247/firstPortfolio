@@ -307,7 +307,7 @@
           <div class="formItem_2">
             <input
               type="email"
-              id="email1"
+              id="email"
               class="ema"
               name="email"
               placeholder="Enter Your E-mail Id"
@@ -419,11 +419,11 @@
                 Username: "vishal@justgoweb.com",
                 Password: "651FD395B72004B1AA01241B38B1157E39A44",
                 To: "vishal@justgoweb.com",
-                From:document.getElementById('email1').value,
+                From:document.getElementById('email').value,
                 Subject: "This is the subject",
                 Body:'Name :' + document.getElementById('name').value +
                 "<br>" + 'Phone :' + document.getElementById('phone').value + 
-                "<br>" + 'Email :' + document.getElementById('email1').value +
+                "<br>" + 'Email :' + document.getElementById('email').value +
                 "<br>" + 'Message :' + document.getElementById('message').value ,
             }).then((message) => alert(message));
         }
