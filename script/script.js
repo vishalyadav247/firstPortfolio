@@ -132,7 +132,7 @@ let submit = document.getElementById('submit');
 
 submit.addEventListener('click', (e) => {
     if (validName === true && validPhone === true && validEmail === true) {
-        console.log(user.value, phone.value, email.value);
+        console.log(user.value, phone.value, emailVar.value);
         e.preventDefault()
         let form = document.getElementById('contactForm');
         form.reset();
